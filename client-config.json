@@ -1,0 +1,76 @@
+{
+  "graphqlService": "https://graphql.vtvprime.vn",
+  "baseUrl": "https://api.vtvprime.vn",
+  "wsLiveChatUrl": "wss://livechat.vtvprime.vn",
+  "captchaUrl": "https://turnstile.vtvprime.vn",
+  "smartTVCaptchaUrl": "https://sm-turnstile.vtvprime.vn",
+  "authService": "https://api.vtvprime.vn/api/identity/v1",
+  "supportService": "https://api.vtvprime.vn/api/support/v1",
+  "logService": "https://client-logger-api.vtvprime.vn/log",
+  "authClientId": "seenow-app",
+  "fingerClientId": "VTVprime",
+  "isMaintenance": false,
+  "commentDisabled": false,
+  "drmConfig": {
+    "widevineServerUrl": "https://vtvcab.ondrm.vn/license-api/v1/drm/licenses/widevine",
+    "fairplayServerUrl": "https://vtvcab.ondrm.vn/license-api/v1/drm/licenses/fairplay",
+    "fairplayCertUrl": "https://ondrmstt.vtvcab.vn/license-api/v1/drm/licenses/fairplay-cert",
+    "fingerprintServerUrl": "https://ondrmstt.vtvcab.vn/license-api/v1/drm/fp/fp-health-check"
+  },
+  "termConditions": {
+    "url": "https://config.vtvprime.vn/common/seenow/terms/{version}/terms_vi.html",
+    "version": "1.0.0"
+  },
+  "privacyPolicy": {
+    "url": "https://config.vtvprime.vn/common/seenow/privacy/{version}/privacy_vi.html",
+    "version": "1.0.0"
+  },
+  "supportUrl": "https://config.vtvprime.vn/common/seenow/faq/0.0.1/faq.html",
+  "webSharingUrl": "https://sharing.vtvprime.vn",
+  "upgrading": {
+    "android": {
+      "minSupportedVersion": "1.2.0",
+      "upgradeUrl": "https://play.google.com/store/apps/details?id=vn.vtvcab.vtvprime.a"
+    },
+    "androidTV": {
+      "minSupportedVersion": "1.4.4",
+      "upgradeUrl": "https://play.google.com/store/apps/details?id=vn.vtvcab.vtvprime.atv"
+    },
+    "ios": {
+      "minSupportedVersion": "1.2.0",
+      "upgradeUrl": "https://apps.apple.com/us/app/vtvprime/id6749408810"
+    }
+  },
+  "featureFlags": {
+    "isCaptchaDisabled": false,
+    "isRedemptionDisabled": false,
+    "isSkipEventSubscription": false
+  },
+  "data": {
+    "upgrading": {
+      "minSupportedVersion": {
+        "androidTV": "1.4.4"
+      }
+    }
+  },
+  "seenowAdminConsole": {
+    "cmsApiService": "https://cms-api.vtvprime.vn",
+    "authService": "https://auth.vtvprime.vn/realms/seenow",
+    "authClient": "seenow-admin-console",
+    "authScope": "openid profile",
+    "authUserInfo": "/protocol/openid-connect/userinfo",
+    "loginCallback": "https://console.vtvprime.vn",
+    "logoutCallback": "",
+    "seenowGWApi": "https://console-api.vtvprime.vn"
+  },
+  "mediahubConsole": {
+    "authService": "https://mh-auth.seenow.com/realms/mediahub",
+    "authClient": "mediahub-console",
+    "authScope": "openid profile",
+    "authUserInfo": "/protocol/openid-connect/userinfo",
+    "loginCallback": "",
+    "logoutCallback": "",
+    "mediahubGW": "https://mh-api.vtvprime.vn",
+    "seenowGW": "https://mediahub-console-api.vtvprime.vn"
+  }
+}
